@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splesh_background" >
+
+    <RelativeLayout
+        android:id="@+id/rl_scancoupon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <Button
+                android:id="@+id/btn_scan_qrcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:background="@color/selected_tab"
+                android:padding="10dip"
+                android:text="@string/scan_qr_code"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_coupon_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_scan_qrcode"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@color/selected_tab"
+                android:padding="10dip"
+                android:text="@string/your_coupon_id"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <!-- Left Drawrer -->
+
+    <RelativeLayout
+        android:id="@+id/rl_leftdrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white" >
+
+        <include
+            android:id="@+id/vendorleftdrawer"
+            layout="@layout/vendor_leftdrawer" />
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

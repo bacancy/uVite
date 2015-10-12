@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splesh_background" >
+
+    <RelativeLayout
+        android:id="@+id/rl_vendorhome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btn_edit_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@color/button_color"
+            android:padding="10dip"
+            android:text="@string/edit_account_information" />
+
+        <Button
+            android:id="@+id/btn_create_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_edit_account"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@color/button_color"
+            android:padding="10dip"
+            android:text="@string/create_coupon" />
+
+        <Button
+            android:id="@+id/btn_view_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_create_coupon"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@color/button_color"
+            android:padding="10dip"
+            android:text="@string/view_coupon" />
+
+        <Button
+            android:id="@+id/btn_scan_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_view_coupon"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@color/button_color"
+            android:padding="10dip"
+            android:text="@string/scan_coupon" />
+
+        <Button
+            android:id="@+id/btn_payment_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_scan_coupon"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@color/button_color"
+            android:padding="10dip"
+            android:text="@string/payment_information" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_payment_information"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@color/button_color"
+            android:padding="10dip"
+            android:text="@string/logout" />
+    </RelativeLayout>
+
+    <!-- Left Drawrer -->
+
+    <RelativeLayout
+        android:id="@+id/rl_leftdrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white" >
+
+        <include
+            android:id="@+id/vendorleftdrawer"
+            layout="@layout/vendor_leftdrawer" />
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

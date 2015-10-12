@@ -1,0 +1,284 @@
+<resources>
+
+    <string name="app_name">uVite</string>
+    <string name="app_crash">Server is not responding..</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="please_wait_transcation">Please wait...Transcation in progress.</string>
+    <string name="alert_internetconnectivity">Please check you internet connection.</string>
+    <string name="data_not_found">Data not found.</string>
+    <string name="toast_login_complete">Login complete successfully.</string>
+    <string name="toast_login_incomplete">You have enter wrong username or password.</string>
+    <string name="toast_logout_complete">Logout complete successfully.</string>
+    <string name="toast_logout_incomplete">Logout complete unsuccessfully.</string>
+    <string name="toast_signup_complete">signup complete successfully.</string>
+    <string name="toast_signup_incomplete">signup complete unsuccessfully.</string>
+    <string name="toast_getting_vendorsignup_incomplete">Can\'t getting vendor details.</string>
+    <string name="toast_getting_promotersignup_incomplete">Can\'t getting promoter details.</string>
+    <string name="toast_update_signup_complete">Update complete successfully.</string>
+    <string name="toast_update_signup_incomplete">Update complete unsuccessfully.</string>
+    <string name="toast_forgotpassword_complete">Sent successfully, please check your mail.</string>
+    <string name="toast_forgotpassword_incomplete">Please provide valid emailid.</string>
+    <string name="toast_coupon_added">Coupon Added</string>
+    <string name="toast_coupon_not_added">Coupon Not Added</string>
+    <!-- <string name="toast_payment_success">Payment Success</string> -->
+    <string name="toast_refer_coupon">Coupon referred successfully</string>
+    <string name="toast_not_refer_coupon">Coupon not referred</string>
+    <string name="toast_add_favoritecoupon">Coupon added to favorite</string>
+    <string name="toast_notadd_favoritecoupon">Coupon not added to favorite</string>
+    <string name="makechoice_title">SELECT YOUR CHOICE</string>
+    <string name="login_title">Log into your uVite account</string>
+    <string name="email_hint">mail@uvite.com            </string>
+    <string name="password_hint">Password          </string>
+    <string name="remember_me">Remember Me</string>
+    <string name="login_button">LOG IN</string>
+    <string name="login_forgotpassword">Forgot Password?</string>
+    <string name="login_signup">New to uVite ? Sign up</string>
+    <string name="toast_movenext_form">you can\'t move to next.fill all details first.</string>
+    <string name="alertmmsg_fill_all_details">Please fill all details.</string>
+    <string name="alertmmsg_enter_your_password">Please enter your password.</string>
+    <string name="alertmmsg_enter_valid_email">Please enter valid email.</string>
+    <string name="alertmmsg_enter_your_email">Please enter your email.</string>
+    <string name="alertmmsg_enter_your_firstname">Please enter your firstname.</string>
+    <string name="alertmmsg_enter_your_lastname">Please enter your lastname.</string>
+    <string name="alertmmsg_enter_your_email_address">Please enter your emailaddress.</string>
+    <string name="alertmmsg_enter_your_valid_email_address">Please enter valid emailaddress.</string>
+    <string name="alertmmsg_enter_your_repassword">Please enter your re-password.</string>
+    <string name="alertmmsg_password_mismatch">Passowrd is mismatch.</string>
+    <!-- <string name="alertmmsg_make_strong_password">Make a strong password.</string> -->
+    <string name="alertmmsg_make_strong_password">Please enter minimum eight character password</string>
+    <string name="alertmmsg_enter_your_phonenumber">Please enter your phonenumber.</string>
+    <string name="alertmmsg_enter_your_contactaddress">Please enter your contactaddress.</string>
+    <string name="alertmmsg_enter_your_username">Please enter your username.</string>
+    <string name="alertmmsg_enter_valid_username">Please enter valid username.</string>
+    <string name="alertmmsg_enter_your_address1">Please enter your address1.</string>
+    <string name="alertmmsg_enter_your_address2">Please enter your address2.</string>
+    <string name="alertmmsg_select_your_country">Please select your country.</string>
+    <string name="alertmmsg_select_your_state">Please select your state.</string>
+    <string name="alertmmsg_select_your_city">Please select your city.</string>
+    <string name="alertmmsg_enter_your_primaryphone">Please enter your primaryphone.</string>
+    <string name="alertmmsg_enter_your_fax">Please enter your fax.</string>
+    <string name="alertmmsg_enter_your_primaryemail">Please enter your primaryemail.</string>
+    <string name="alertmmsg_enter_your_primarycontact">Please enter your primarycontact.</string>
+    <string name="alertmmsg_enter_your_website">Please enter your website.</string>
+    <string name="alertmmsg_enter_your_valid_website">Please enter valid website.</string>
+    <string name="alertmmsg_enter_your_coupon_title">Please enter coupon title.</string>
+    <string name="alertmmsg_invalid_startdate">Please enter valid start date.</string>
+    <string name="alertmmsg_invalid_enddate">Please enter valid end date.</string>
+    <string name="alertmmsg_enter_your_coupon_desc">Please enter coupon description.</string>
+    <string name="alertmmsg_enter_your_discount_details">Please enter discount details.</string>
+    <string name="alertmmsg_select_your_category">Please select your category.</string>
+    <string name="alertmmsg_select_your_discount_type">Please select your discount type.</string>
+    <string name="alertmmsg_choose_start_date">Please choose start date.</string>
+    <string name="alertmmsg_choose_end_date">Please choose end date.</string>
+    <string name="alertmmsg_enter_referral_commission">Please enter referral commission.</string>
+    <string name="alertmmsg_enter_number_of_coupons">Please enter number of coupons</string>
+    <string name="alertmmsg_select_valid_dates">Please Select Valid Dates.</string>
+    <string name="alertmmsg_check_cardnumber">Please check the card number you have entered</string>
+    <string name="alertmmsg_check_expired_month">Please check valid card expired month</string>
+    <string name="alertmmsg_check_expired_year">Please check valid card expired year</string>
+    <string name="alertmmsg_check_cvv_code">Please check the 3 digit CVV security code</string>
+    <string name="forgotpass_title">ENTER EMAIL ID</string>
+    <string name="forgotpass_button">Send Password</string>
+    <string name="forgotpass_description">Some description about the forgot password.</string>
+    <string name="login_vendortype">I am vendor</string>
+    <string name="login_promotortype">I am uVite user</string>
+    <string name="registration_title">Who are you ? Select your Registration Type</string>
+    <string name="registration_vendortype">I am Vendor / Company</string>
+    <string name="registration_promotortype">I am Promotor / User</string>
+    <string name="registration_button">Register me</string>
+    <string name="promoters_registration">Promoters Registration</string>
+    <string name="vendor_registration">Vendor Registration</string>
+    <string name="update_vendor_registration">Update Vendor Details</string>
+    <string name="update_promoter_registration">Update Promoter Deatils</string>
+    <string name="contact">CONTACT</string>
+    <string name="business">BUSINESS</string>
+    <string name="card_details">CARD DETAILS</string>
+    <string name="payment">PAYMENT</string>
+    <string name="next">Next</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="back">back</string>
+    <string name="add_later">Add Later</string>
+    <string name="or">OR</string>
+    <string name="uploadphoto">UPLOAD LOGO</string>
+    <string name="firstname_hint">First Name*</string>
+    <string name="lastname_hint">Last Name*</string>
+    <string name="emailaddress_hint">Email Address*</string>
+    <string name="enterpassword_hint">Enter Password</string>
+    <string name="retypepassword_hint">Retype Password</string>
+    <string name="phonenumber_hint">Phone Number*</string>
+    <string name="contactaddress_hint">Contact Address</string>
+    <string name="username_hint">Username</string>
+    <string name="address1_hint">Address 1*</string>
+    <string name="address2_hint">Address 2*</string>
+    <string name="country_hint">Country*</string>
+    <string name="state_hint">State*</string>
+    <string name="city_hint">City*</string>
+    <string name="primaryphone_hint">Primary Phone*</string>
+    <string name="fax_hint">FAX</string>
+    <string name="primaryemail_hint">Primary Email*</string>
+    <string name="primarycontact_hint">Primary Contact*</string>
+    <string name="additionalcontacts_hint">Additional Contacts</string>
+    <string name="website_hint">Website*</string>
+    <string name="cardnumber_hint">Card Number</string>
+    <string name="cvv_hint">CVV</string>
+    <string name="expirationmonth_hint">Expiration Month (eg.05 for May)</string>
+    <string name="expirationyear_hint">Expiration Year (eg.2015)</string>
+    <string name="paypalid_hint">Paypal ID</string>
+    <string name="alert_username">8 characters, mix of #,letters,and symbols *</string>
+    <string name="home">Home</string>
+    <string name="menu">Menu</string>
+    <string name="search">Search</string>
+    <string name="logout">LOGOUT</string>
+    <string name="account_name">JOHN DEAD</string>
+    <string name="account_amount">$20</string>
+    <string name="account_banner">Referral Amount</string>
+    <string name="edit_account_information">EDIT ACCOUNT INFORMATION</string>
+    <string name="create_coupon">CREATE COUPON</string>
+    <string name="view_coupon">VIEW COUPON</string>
+    <string name="scan_coupon">SCAN COUPON</string>
+    <string name="payment_information">PAYMENT INFORMATION</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="all_coupons">All Coupons</string>
+    <string name="withdrawal">Withdrawal</string>
+    <string name="upload_coupon_image">UPLOAD COUPON IMAGE</string>
+    <string name="coupon_title">Coupon Title</string>
+    <string name="coupon_description">Coupon Description</string>
+    <string name="discount_details">Discount Details</string>
+    <string name="select_category">Select Category</string>
+    <string name="discount_type">Discount Type</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="referral_commission">Referral Commission(e.g. $2)</string>
+    <string name="number_of_coupons">Number of coupons( 10 )</string>
+    <string name="total_amount">Total Amount : </string>
+    <string name="make_payment">Make Payment</string>
+    <string name="pay">Pay</string>
+    <string name="cardholder_name">Card holder name</string>
+    <string name="creditcard_hint">xxxx xxxx xxxx 8456</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="via_text_message">Via Text Message</string>
+    <string name="your_coupon_id">Your Coupon ID</string>
+    <string name="encoder_name">QR Code Encoder</string>
+    <string name="decoder_name">QR Code Decoder</string>
+    <string name="contents_contact">Contact info</string>
+    <string name="contents_email">Email address</string>
+    <string name="contents_location">Geographic coordinates</string>
+    <string name="contents_phone">Phone number</string>
+    <string name="contents_sms">SMS address</string>
+    <string name="contents_text">Plain text</string>
+    <string name="msg_default_contents">Contents</string>
+    <string name="msg_default_format">Format</string>
+    <string name="msg_default_meta">Metadata</string>
+    <string name="msg_default_mms_subject">Hi</string>
+    <string name="msg_default_status">Place a barcode inside the viewfinder rectangle to scan it.</string>
+    <string name="msg_default_time">Time</string>
+    <string name="msg_default_type">Type</string>
+    <string name="result_address_book">Found contact info</string>
+    <string name="result_calendar">Found calendar event</string>
+    <string name="result_email_address">Found email address</string>
+    <string name="result_geo">Found geographic coordinates</string>
+    <string name="result_isbn">Found book</string>
+    <string name="result_product">Found product</string>
+    <string name="result_sms">Found SMS address</string>
+    <string name="result_tel">Found phone number</string>
+    <string name="result_text">Found plain text</string>
+    <string name="result_uri">Found URL</string>
+    <string name="result_wifi">Found WLAN Configuration</string>
+    <string name="wifi_changing_network">Changing Network</string>
+    <string name="wifi_ssid_label">Network Name</string>
+    <string name="wifi_type_label">Type</string>
+    <string name="barcode_image">Barcode Image</string>
+    <string name="review_coupon">Review Coupon</string>
+    <string name="desc_of_coupon">Description Of Coupon</string>
+    <string name="expire_date">Expire Date</string>
+    <string name="availability">Availability :</string>
+    <string name="revcoupon_referral_commission">Referral Commission :</string>
+    <string name="approve">Approve</string>
+    <string name="decline">Decline</string>
+    <string name="total_coupon">Total Coupon : </string>
+    <string name="total_referred">Total Referred : </string>
+    <string name="total_redeemed">Total Redeemed : </string>
+    <string name="coupon_referred">Coupon Referred : </string>
+    <string name="coupon_used">Coupon Used : </string>
+    <string name="vendor_coupon_listing">VENDOR\'S COUPON LISTING</string>
+    <string name="active_coupon">ACTIVE COUPON</string>
+    <string name="expired_coupon">EXPIRED COUPON</string>
+    <string name="redeemed_coupon">REDEEMED</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="photo">Photo</string>
+    <string name="camera">Camera</string>
+    <string name="photo_album">Photo album</string>
+    <string name="email_address">Email Address</string>
+    <string name="refer_friend">Refer a Friend</string>
+    <string name="all_coupon">All Coupons</string>
+    <string name="all_active_coupons">ALL ACTIVE COUPON</string>
+    <string name="my_coupons">MY COUPON</string>
+    <string name="referred">REFERRED</string>
+    <string name="favorites">FAVORITES</string>
+    <string name="refer_coupon">Refer Coupon</string>
+    <string name="referred_coupons">Referred Coupons</string>
+    <string name="status">Status : </string>
+    <string name="coupon_added">Coupon Added</string>
+    <string name="category">Category</string>
+    <string name="location">Location</string>
+    <string name="vendor">Vendor</string>
+    <string name="filter">Filter</string>
+    <string name="clear_filter">CLEAR FILTER</string>
+    <string name="apply">APPLY</string>
+
+    <string-array name="country">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>American Samoa</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antarctica</item>
+        <item>Antigua and Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Aruba</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahamas</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>India</item>
+        <item>United States</item>
+    </string-array>
+    <string-array name="state">
+        <item>California</item>
+        <item>Texas</item>
+        <item>Ohio</item>
+        <item>Michigan</item>
+        <item>Oregon</item>
+    </string-array>
+    <string-array name="city">
+        <item>Los Angeles</item>
+        <item>Houston</item>
+        <item>Columbus</item>
+        <item>Detroit</item>
+        <item>Portland</item>
+    </string-array>
+    <string-array name="category">
+        <item>Books</item>
+        <item>Electronics</item>
+        <item>Music</item>
+        <item>DVD</item>
+        <item>Home &amp; Living</item>
+        <item>Cloths</item>
+    </string-array>
+    <string-array name="discounttype">
+        <item>Flat Price Discount</item>
+        <item>Percentage Discount</item>
+    </string-array>
+
+</resources>

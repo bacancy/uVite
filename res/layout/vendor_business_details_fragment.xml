@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splesh_background"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scroll_vendorbusiness"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_vendorbusiness"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <EditText
+                    android:id="@+id/ed_address1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_profileimg"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/profile_edit_input_box"
+                    android:ems="10"
+                    android:hint="@string/address1_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine"
+                    android:maxLines="3"
+                    android:padding="15dip"
+                    android:singleLine="true"
+                    android:textSize="@dimen/reg_edit_text" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/ed_address2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ed_address1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/profile_edit_input_box"
+                    android:ems="10"
+                    android:hint="@string/address2_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine"
+                    android:maxLines="3"
+                    android:padding="15dip"
+                    android:paddingTop="5dp"
+                    android:textSize="@dimen/reg_edit_text" />
+
+                <EditText
+                    android:id="@+id/ed_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ed_address2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/profile_edit_input_box"
+                    android:ems="10"
+                    android:hint="@string/country_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine"
+                    android:padding="15dip"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/reg_edit_text" />
+
+                <EditText
+                    android:id="@+id/ed_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ed_country"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/profile_edit_input_box"
+                    android:ems="10"
+                    android:hint="@string/state_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine"
+                    android:padding="15dip"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/reg_edit_text" />
+
+                <EditText
+                    android:id="@+id/ed_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ed_state"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/profile_edit_input_box"
+                    android:ems="10"
+                    android:hint="@string/city_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine"
+                    android:padding="15dip"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/reg_edit_text" />
+
+                <!--
+                <Spinner
+                    android:id="@+id/spinner_country"
+                    style="@style/MySpinnerLook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/ed_address2"
+                    android:layout_alignRight="@+id/ed_address2"
+                    android:layout_below="@+id/ed_address2"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/home_input_box"
+                    android:paddingLeft="10dip"
+                    android:textSize="@dimen/reg_edit_text" />
+
+                <Spinner
+                    android:id="@+id/spinner_state"
+                    style="@style/MySpinnerLook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/spinner_country"
+                    android:layout_alignRight="@+id/spinner_country"
+                    android:layout_below="@+id/spinner_country"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/home_input_box"
+                    android:paddingLeft="10dip"
+                    android:textSize="@dimen/reg_edit_text" />
+
+                <Spinner
+                    android:id="@+id/spinner_city"
+                    style="@style/MySpinnerLook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/spinner_state"
+                    android:layout_alignRight="@+id/spinner_state"
+                    android:layout_below="@+id/spinner_state"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/home_input_box"
+                    android:paddingLeft="10dip"
+                    android:textSize="@dimen/reg_edit_text" />
+                -->
+
+                <EditText
+                    android:id="@+id/ed_primaryphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ed_city"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/profile_edit_input_box"
+                    android:ems="10"
+                    android:hint="@string/primaryphone_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:padding="15dip"
+                    android:singleLine="true"
+                    android:textSize="@dimen/reg_edit_text" />
+
+                <EditText
+                    android:id="@+id/ed_fax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ed_primaryphone"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/profile_edit_input_box"
+                    android:ems="10"
+                    android:hint="@string/fax_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:padding="15dip"
+                    android:singleLine="true"
+                    android:textSize="@dimen/reg_edit_text" />
+
+                <EditText
+                    android:id="@+id/ed_primaryemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ed_fax"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/profile_edit_input_box"
+                    android:ems="10"
+                    android:hint="@string/primaryemail_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:padding="15dip"
+                    android:singleLine="true"
+                    android:textSize="@dimen/reg_edit_text" />
+
+                <EditText
+                    android:id="@+id/ed_primarycontact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ed_primaryemail"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/profile_edit_input_box"
+                    android:ems="10"
+                    android:hint="@string/primarycontact_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:padding="15dip"
+                    android:singleLine="true"
+                    android:textSize="@dimen/reg_edit_text" />
+
+                <EditText
+                    android:id="@+id/ed_additionalcontact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ed_primarycontact"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/profile_edit_input_box"
+                    android:ems="10"
+                    android:hint="@string/additionalcontacts_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:padding="15dip"
+                    android:singleLine="true"
+                    android:textSize="@dimen/reg_edit_text" />
+
+                <EditText
+                    android:id="@+id/ed_website"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ed_additionalcontact"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/profile_edit_input_box"
+                    android:ems="10"
+                    android:hint="@string/website_hint"
+                    android:imeOptions="actionDone"
+                    android:padding="15dip"
+                    android:singleLine="true"
+                    android:textSize="@dimen/reg_edit_text" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_profileimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/ed_address1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/ed_address1"
+                    android:layout_marginTop="10dp" >
+
+                    <FrameLayout
+                        android:id="@+id/flpromoterprofile"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/border_round_thite" >
+
+                        <ImageView
+                            android:id="@+id/img_promoterprofile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/img" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/txt_profilename"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/flpromoterprofile"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dip"
+                        android:text="@string/uploadphoto"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/ed_website"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dip"
+                    android:background="@color/button_color"
+                    android:padding="8dip"
+                    android:text="@string/next"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

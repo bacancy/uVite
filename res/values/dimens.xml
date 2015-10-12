@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="total_coupon">11dp</dimen>
+    <dimen name="total_referred">11dp</dimen>
+    <dimen name="total_redeemed">11dp</dimen>
+    <dimen name="all_active_coupons">11dp</dimen>
+    <dimen name="my_coupons">11dp</dimen>
+    <dimen name="referred">11dp</dimen>
+    <dimen name="reg_edit_text">13sp</dimen>
+
+</resources>

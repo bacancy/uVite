@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_round_thite"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_vendorcoupons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_round_thite" >
+
+        <FrameLayout
+            android:id="@+id/fl_image"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="5dp" >
+
+            <ImageView
+                android:id="@+id/img_coupon"
+                android:layout_width="match_parent"
+                android:layout_height="150dip"
+                android:background="@drawable/ic_launcher"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/txt_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/coupon_list_delete_icon" />
+
+                <ImageView
+                    android:id="@+id/txt_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/txt_delete"
+                    android:background="@drawable/coupon_list_edit_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/bottom_shadow"
+                android:gravity="bottom"
+                android:paddingBottom="8dip"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/txt_availability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="2dip"
+                    android:text="Avilibility:6"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/txt_referralcommission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="2dip"
+                    android:text="Avilibility:6"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+
+            <!--
+            <ImageView
+                android:id="@+id/img_coupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txt_availability"
+                android:layout_alignLeft="@+id/txt_availability"
+                android:layout_alignRight="@+id/txt_delete"
+                android:layout_below="@+id/txt_delete"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_empty" />
+
+            <TextView
+                android:id="@+id/txt_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/delete" />
+
+            <TextView
+                android:id="@+id/txt_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txt_delete"
+                android:layout_alignBottom="@+id/txt_delete"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/txt_delete"
+                android:text="@string/edit" />
+
+            <TextView
+                android:id="@+id/txt_availability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/availability" />
+
+            <TextView
+                android:id="@+id/txt_referralcommission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/revcoupon_referral_commission" />
+            -->
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/llContain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fl_image"
+            android:layout_alignRight="@+id/fl_image"
+            android:layout_below="@+id/fl_image"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/txt_coupontitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Avilibility:6"
+                android:textColor="@color/vendor_list_text_color" />
+
+            <TextView
+                android:id="@+id/txt_expiredate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="Avilibility:6"
+                android:textColor="@color/vendor_list_text_color" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_couponused"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llContain"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="2dip"
+            android:text="Avilibility:6"
+            android:textColor="@color/vendor_list_gray_color" />
+
+        <!--
+        <RelativeLayout
+            android:id="@+id/rl_contain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fl_image"
+            android:layout_alignRight="@+id/fl_image"
+            android:layout_below="@+id/fl_image" >
+
+            <TextView
+                android:id="@+id/txt_coupondec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_coupontitle"
+                android:layout_below="@+id/txt_coupontitle"
+                android:layout_marginTop="5dp"
+                android:text="@string/desc_of_coupon" />
+
+            <TextView
+                android:id="@+id/txt_expiredate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_coupondec"
+                android:layout_below="@+id/txt_coupondec"
+                android:layout_marginTop="15dp"
+                android:text="@string/expire_date" />
+
+            <TextView
+                android:id="@+id/txt_coupontitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/coupon_title"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txt_couponreferred"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txt_coupondec"
+                android:layout_alignBottom="@+id/txt_coupondec"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/txt_coupondec"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/coupon_referred" />
+
+            <TextView
+                android:id="@+id/txt_couponused"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txt_couponreferred"
+                android:layout_marginTop="3dp"
+                android:singleLine="true"
+                android:text="@string/coupon_used" />
+        </RelativeLayout>
+        -->
+    </RelativeLayout>
+
+</RelativeLayout>

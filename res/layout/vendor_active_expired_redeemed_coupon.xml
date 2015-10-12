@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splesh_background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/li_main"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dip"
+            android:background="@android:color/white" >
+
+            <RelativeLayout
+                android:id="@+id/rl_total_coupon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33" >
+
+                <TextView
+                    android:id="@+id/txt_total_coupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:singleLine="true"
+                    android:text="@string/total_coupon"
+                    android:textColor="@color/vendor_list_text_color"
+                    android:textSize="@dimen/total_coupon"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_total_referred"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33" >
+
+                <TextView
+                    android:id="@+id/txt_total_referred"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:singleLine="true"
+                    android:text="@string/total_referred"
+                    android:textColor="@color/vendor_list_text_color"
+                    android:textSize="@dimen/total_referred"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_total_redeemed"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33" >
+
+                <TextView
+                    android:id="@+id/txt_total_redeemed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:singleLine="true"
+                    android:text="@string/total_redeemed"
+                    android:textColor="@color/vendor_list_text_color"
+                    android:textSize="@dimen/total_redeemed"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list_vendor_active_expired_redeemed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/li_main"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/splesh_background"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dip"
+            android:scrollingCache="false" >
+        </ListView>
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

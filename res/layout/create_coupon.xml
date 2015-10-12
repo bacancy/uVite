@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splesh_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/status_bar_bg" >
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/back_button_small" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/create_coupon"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_vendorbusiness"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_header"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/rl_vendorbusiness"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <EditText
+                android:id="@+id/ed_coupontitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_profileimg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/text_box"
+                android:ems="10"
+                android:hint="@string/coupon_title"
+                android:imeOptions="actionNext"
+                android:padding="15dip"
+                android:singleLine="true" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/ed_coupondesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ed_coupontitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/text_box"
+                android:ems="10"
+                android:hint="@string/coupon_description"
+                android:imeOptions="actionNext"
+                android:padding="15dip"
+                android:paddingTop="2dp" />
+
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ed_coupondesc"
+                android:layout_alignRight="@+id/ed_coupondesc"
+                android:layout_below="@+id/ed_coupondesc"
+                android:layout_centerHorizontal="true" />
+
+            <Spinner
+                android:id="@+id/spinner_discounttype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spinner_category"
+                android:layout_alignRight="@+id/spinner_category"
+                android:layout_below="@+id/spinner_category" />
+
+            <RelativeLayout
+                android:id="@+id/rl_profileimg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ed_address1"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/ed_address1"
+                android:layout_marginTop="10dp" >
+
+                <FrameLayout
+                    android:id="@+id/flpromoterprofile"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/border_round_thite" >
+
+                    <ImageView
+                        android:id="@+id/img_coupon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/txt_profilename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/flpromoterprofile"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/upload_coupon_image"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/li_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spinner_discounttype"
+                android:layout_alignRight="@+id/spinner_discounttype"
+                android:layout_below="@+id/spinner_discounttype"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_startdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/txt_startdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/text_box"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="@string/start_date" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_enddate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dip"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/txt_enddate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/text_box"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="@string/end_date" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/ed_referralcommission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/li_date"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/text_box"
+                android:ems="10"
+                android:hint="@string/referral_commission"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:padding="15dip"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/ed_numbersofcoupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ed_referralcommission"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/text_box"
+                android:ems="10"
+                android:hint="@string/number_of_coupons"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:padding="15dip"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/txt_totalamount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ed_numbersofcoupon"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="@string/total_amount"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_makepayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_totalamount"
+                android:layout_centerHorizontal="true"
+                android:background="@color/button_color"
+                android:padding="15dip"
+                android:text="@string/make_payment"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

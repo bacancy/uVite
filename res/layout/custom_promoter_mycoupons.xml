@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_round_thite"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_promotercoupons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/rl_image"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="5dp" >
+
+            <ImageView
+                android:id="@+id/img_coupon"
+                android:layout_width="match_parent"
+                android:layout_height="150dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_contain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rl_image"
+            android:layout_alignRight="@+id/rl_image"
+            android:layout_below="@+id/rl_image" >
+
+            <TextView
+                android:id="@+id/txt_coupondec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_coupontitle"
+                android:layout_below="@+id/txt_coupontitle"
+                android:layout_marginTop="5dp"
+                android:text="@string/desc_of_coupon"
+                android:textColor="@color/vendor_list_gray_color" />
+
+            <TextView
+                android:id="@+id/txt_expiredate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_coupondec"
+                android:layout_below="@+id/txt_coupondec"
+                android:layout_marginTop="2dp"
+                android:text="@string/expire_date"
+                android:textColor="@color/vendor_list_gray_color" />
+
+            <TextView
+                android:id="@+id/txt_coupontitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/coupon_title"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/vendor_list_text_color" />
+
+            <ImageView
+                android:id="@+id/img_qrcode"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_empty" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
